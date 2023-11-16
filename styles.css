@@ -3,52 +3,120 @@
   --paragraph-blue: #cbcfdc;
   --paragraph-white: #fffef6;
   --header-gold: #f4d8a2;
+  --background-darker: #0c151a;
 }
 
+/*This is where the newsletter section is */
 body {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
   background-color: var(--background-lighter);
-  gap: 20px;
-  height: auto;
-  margin: 24px;
+  margin: 0px;
 }
-.navbar,
-.hero,
-.misc,
-.currentMovies,
-.newsletter,
-.upcomingMovies,
-.offer {
-  display: flex;
-  width: 100%;
-  height: auto;
-  flex-direction: column;
-  justify-content: center;
-  font-family: "Kiwi Maru", serif;
+.newsButton,
+.newsletterContainer,
+.indexHeader {
   font-family: "Playfair Display", serif;
+}
+.newsButton {
+  color: var(--paragraph-white);
+}
+::placeholder {
+  font-family: "Barlow", sans-serif;
+  color: #bfc9c8;
+}
+
+/* This is where the movie section begins */
+
+.indexHeader {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.movieSection {
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  color: var(--paragraph-white);
+  margin-left: 24px;
+  margin-right: 24px;
+}
+.containerImages {
+  flex-direction: row;
+  overflow: scroll;
+  white-space: nowrap;
+}
+.moviePoster {
+  width: 40%;
+  height: auto;
+  margin-right: 20px;
+}
+
+/* this is where the news section begins */
+.newsButton,
+::placeholder {
+  font-size: 14px;
+}
+.newsletterContainer {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+.newsletter {
+  justify-content: center;
+  flex-direction: column;
+}
+.newsletterHeader {
+  font-size: 16px;
+  color: var(--paragraph-white);
+}
+.newsInput {
+  width: 40%;
+  height: 25px;
   background-color: var(--paragraph-white);
+  border-style: none;
+}
+.newsButton {
+  width: auto;
+  border-style: solid;
+  border-color: var(--header-gold);
+  background-color: transparent;
+  height: 27px;
+}
+.thinLine {
+  width: 20%;
+  margin-bottom: 45px;
+  margin-top: 24px;
+}
+.indexBanner {
+  width: 100%;
+  margin-top: 45px;
 }
 
 /* The footer has icons eveny spaced out. The breakpoints can be changed later on. */
 .footer {
   display: flex;
-  width: 100%;
-  height: auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   justify-content: space-around;
+  background-color: var(--background-darker);
 }
 @media only screen and (min-width: 500px) {
   .mediaIcon {
     width: 50px;
     height: 50px;
+    margin-top: 60px;
+    margin-bottom: 60px;
   }
 }
 @media only screen and (min-width: 1000px) {
   .mediaIcon {
     width: 60px;
     height: 60px;
+    margin-top: 100px;
+    margin-bottom: 100px;
   }
 }
