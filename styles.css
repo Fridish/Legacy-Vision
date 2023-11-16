@@ -1,0 +1,54 @@
+:root {
+  --background-lighter: #121e24;
+  --paragraph-blue: #cbcfdc;
+  --paragraph-white: #fffef6;
+  --header-gold: #f4d8a2;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--background-lighter);
+  gap: 20px;
+  height: auto;
+  margin: 24px;
+}
+.navbar,
+.hero,
+.misc,
+.currentMovies,
+.newsletter,
+.upcomingMovies,
+.offer {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Kiwi Maru", serif;
+  font-family: "Playfair Display", serif;
+  background-color: var(--paragraph-white);
+}
+
+/* The footer has icons eveny spaced out. The breakpoints can be changed later on. */
+.footer {
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  justify-content: space-around;
+}
+@media only screen and (min-width: 500px) {
+  .mediaIcon {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .mediaIcon {
+    width: 60px;
+    height: 60px;
+  }
+}
