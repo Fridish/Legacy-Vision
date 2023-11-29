@@ -4,9 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&display=swap"
+      rel="stylesheet"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,100 +23,194 @@
     <title>Legacy Vision</title>
   </head>
   <body>
+    <div>
+      <img class="indexHero" src="Media/TestHeader.png" alt="">
+    </div>
     <div class="navbar"></div>
 
     <!-- This is where the Hero is displayed. -->
 
-    <header class="indexHero">
-    </header>
+    <header class="indexHero"></header>
 
     <!-- This is where current movies are displayed. With a sidescroll -->
-    <div class="movieSection">
-      <p class="indexHeader">Nu på Bio</p>
-      <div class="containerImages">
-        <img
-          class="moviePoster"
-          src="Media/posterTest.png"
-          alt="this is the movie poster for Shawshank redemption"
-        />
-        <img
-          class="moviePoster"
-          src="Media/posterTest.png"
-          alt="this is the movie poster for Shawshank redemption"
-        />
-        <img
-          class="moviePoster"
-          src="Media/posterTest.png"
-          alt="this is the movie poster for Shawshank redemption"
-        />
-        <img
-          class="moviePoster"
-          src="Media/posterTest.png"
-          alt="this is the movie poster for Shawshank redemption"
-        />
+    <p class="indexHeader">Nu på Bio</p>
+    <div class=" swiperContainer">
+    <div class="swiper" id="swiper2">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <img
+            class="moviePoster"
+            src="Media/pulp fiction.png"
+            alt="this is the movie poster for Pulp Fiction"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            class="moviePoster"
+            src="Media/silence of the lambs.png"
+            alt="this is the movie poster for Silence of The Lambs"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            class="moviePoster"
+            src="Media/fight club.png"
+            alt="this is the movie poster for Fight Club"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            class="moviePoster"
+            src="Media/oldboy.png"
+            alt="this is the movie poster for Oldboy"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            class="moviePoster"
+            src="Media/joker.png"
+            alt="this is the movie poster for Joker"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            class="moviePoster"
+            src="Media/whiplash.png"
+            alt="this is the movie poster for Whiplash"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            class="moviePoster"
+            src="Media/grave of the fireflies.png"
+            alt="this is the movie poster for Grave of the Fireflies"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            class="moviePoster"
+            src="Media/leon.png"
+            alt="this is the movie poster for Leon"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            class="moviePoster"
+            src="Media/matrix.png"
+            alt="this is the movie poster for the Matrix"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            class="moviePoster"
+            src="Media/parasite.png"
+            alt="this is the movie poster for Parasite"
+          />
+        </div>
       </div>
-
+     <!-- <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div> -->
     </div>
-
+  </div>
     <!-- this is here the offer is going to be displayed-->
-    <div class="movieSection">
       <p class="indexHeader">Kommande Filmer</p>
-      <div class="containerImages">
-        <img
-          class="moviePoster"
-          src="Media/posterTest.png"
-          alt="this is the movie poster for Shawshank redemption"
-        />
-        <img
-          class="moviePoster"
-          src="Media/posterTest.png"
-          alt="this is the movie poster for Shawshank redemption"
-        />
-        <img
-          class="moviePoster"
-          src="Media/posterTest.png"
-          alt="this is the movie poster for Shawshank redemption"
-        />
-        <img
-          class="moviePoster"
-          src="Media/posterTest.png"
-          alt="this is the movie poster for Shawshank redemption"
-        />
-        <img
-          class="moviePoster"
-          src="Media/posterTest.png"
-          alt="this is the movie poster for Shawshank redemption"
-        />
-        <img
-          class="moviePoster"
-          src="Media/posterTest.png"
-          alt="this is the movie poster for Shawshank redemption"
-        />
-        <img
-          class="moviePoster"
-          src="Media/posterTest.png"
-          alt="this is the movie poster for Shawshank redemption"
-        />
+      <div class=" swiperContainer">
+      <div class="swiper" id="swiper1">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img
+              class="moviePoster"
+              src="Media/dark knight.png"
+              alt="this is the movie poster for The Dark Knight"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="moviePoster"
+              src="Media/django.png"
+              alt="this is the movie poster for Django Unchained"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="moviePoster"
+              src="Media/endgame.png"
+              alt="this is the movie poster for Avengers: Endgame"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="moviePoster"
+              src="Media/gladiator.png"
+              alt="this is the movie poster for Gladiator"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="moviePoster"
+              src="Media/inception.png"
+              alt="this is the movie poster for Inception"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="moviePoster"
+              src="Media/inglorious basterds.png"
+              alt="this is the movie poster for Inglorious Basterds"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="moviePoster"
+              src="Media/lord of the rings.png"
+              alt="this is the movie poster for Lord of th Rings"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="moviePoster"
+              src="Media/shindlers list.png"
+              alt="this is the movie poster for Shindler's List"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="moviePoster"
+              src="Media/star wars.png"
+              alt="this is the movie poster for Star Wars"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="moviePoster"
+              src="Media/grave of the fireflies.png"
+              alt="this is the movie poster for Grave of the Fireflies"
+            />
+          </div>
+        </div>
+       <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>-->
       </div>
-
-    </div> 
-
-    <!-- This is where upcoming movies are displayed. With a sidescroll -->
-    <div class="movieSection">
     </div>
+      <!-- This is where upcoming movies are displayed. With a sidescroll -->
+      <div class="movieSection"></div>
 
-    <!-- This is where the newsletter is displayed -->  
-    <div class="newsletterContainer">
-      <img
-      class="thinLine"
-      src="Media/thinkLine.svg"
-      alt="A nice banner"
-    />
-      <form action="" class="newsletter">
-        <p class="newsletterHeader ">Prenumerera på vårt nyhetsbrev</p>
-     <input class="newsInput" type="text" placeholder="  Enter your E-mail">
-     <button class="newsButton">Prenumerera</button>
-    </form>
+      <!-- This is where the newsletter is displayed -->
+      <div class="newsletterContainer">
+        <img class="thinLine" src="Media/thinkLine.svg" alt="A nice banner" />
+        <form action="" class="newsletter">
+          <p class="newsletterHeader">Prenumerera på vårat nyhetsbrev</p>
+          <input
+            class="newsInput"
+            type="text"
+            placeholder="  Enter your E-mail"
+          />
+          <button class="newsButton">Prenumerera</button>
+        </form>
         <img
           class="indexBanner"
           src="Media/bannerBottom.svg"
@@ -124,5 +225,9 @@
       <img src="Media/Instagram.svg" class="mediaIcon" alt="Instagram icon" />
       <img src="Media/Help.svg" class="mediaIcon" alt="Help icon" />
     </div>
-  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js">
+  </script>
+  <script src="script.js"></script>
+</body>
 </html>
