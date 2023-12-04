@@ -2,6 +2,7 @@
  --Background-lighter: #121E24;
  --Goldenheader: #E8D39B;
  --Paragraph-Blue: #CBCFDC;
+ --Paragraph: #FFFEF6;
 }
 
 
@@ -20,11 +21,22 @@ body {
 }
 
 nav {
+    margin-top: 9px;
     background-color: transparent;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
     width: 100%;
+}
+
+.nav-end-container {
+    display:flex;
+    gap:10px;
+    margin-right:10px;
+}
+
+.none {
+    display:none
 }
 
 .nav_section_one {
@@ -33,18 +45,44 @@ nav {
     gap: 19px;
 }
 
-svg.hamburger {
+.navtext {
+    display: flex;
+    flex-direction: row;
+    gap: 21px;
+    color:white;
+}
+
+.navtext a {
+    text-decoration: none;
+}
+
+.navtext h3 {
+    color: var(--Paragraph, #FFFEF6);
+    text-align: center;
+    font-family: 'Barlow';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-block-end: 0;
+    margin-block-start: 0px;
+}
+
+.nav_section_one .hamburger {
+    display: none;
     padding-top: 5px;
 }
 
-img.loggapng {
-    height: 37px;
-    width: 37px;
+.hamburger {
+    fill: var(--Paragraph, #FFFEF6);
+    stroke-width: 4px;
+    stroke: var(--Paragraph, #FFFEF6);
 }
 
-svg.search {
-    margin-right: 10px;
-    padding-bottom: 4px;
+img.loggapng {
+    display: none;
+    height: 37px;
+    width: 37px;
 }
 
 .hero {
@@ -138,13 +176,13 @@ p.mobileparagraph {
     z-index: 0;
 }
 
-.swiper-wrapper {
+.swiper-wrapper-movie {
     display: none;
     height: auto;
     width: 100%;
 }
 
-.swiper{
+.swipermovie{
     width: 100%;
     display: none;
 }
@@ -354,7 +392,7 @@ footer img {
 }
 
 
-@media (max-width:375px) {
+@media (max-width:450px) {
     body {
         margin: 0px;
         box-sizing: border-box;
@@ -380,6 +418,22 @@ footer img {
     svg.search {
         margin-right: 10px;
         padding-bottom: 4px;
+    }
+
+    .navtext {
+        display:none;
+    }
+    
+    .nav_section_one .hamburger {
+        display:block;
+    }
+
+    .nav-end-container .hamburger {
+        display: none;
+    }
+
+    img.loggapng {
+        display: block;
     }
 
     .hero {
