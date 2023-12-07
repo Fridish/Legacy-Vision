@@ -35,19 +35,19 @@ const indexSwiper = new Swiper(".indexSwiper", {
   breakpoints: {
     200: {
       slidesPerView: 1.5,
-      spaceBetween: 0,
+      spaceBetween: 10,
     },
-    450: {
+    500: {
       slidesPerView: 2.5,
-      spaceBetween: 0,
+      spaceBetween: 15,
     },
     900: {
       slidesPerView: 3.5,
-      spaceBetween: 0,
+      spaceBetween: 20,
     },
     1350: {
       slidesPerView: 4.5,
-      spaceBetween: 0,
+      spaceBetween: 30,
     },
   },
 });
