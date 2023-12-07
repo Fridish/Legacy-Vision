@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const swiper = new Swiper('.swiper', {
+    const swiper = new Swiper('.swiperMovie', {
         speed: 400,
         spaceBetween: 100,
         autoplay: {
