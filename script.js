@@ -1,4 +1,4 @@
-const swiper = new Swiper(".swiper", {
+const indexswiper = new Swiper(".indexSwiper", {
   // Optional parameters
   direction: "horizontal",
   loop: true,
@@ -16,7 +16,7 @@ const swiper = new Swiper(".swiper", {
       slidesPerView: 3.5,
       spaceBetween: 0,
     },
-    1200: {
+    1350: {
       slidesPerView: 4.5,
       spaceBetween: 0,
     },
