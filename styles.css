@@ -746,3 +746,180 @@ footer img {
         margin-bottom: 14px;
     }
 }
+
+body {
+  background-color: var(--background-lighter);
+  margin: 0px;
+}
+/* hero */
+.indexHero {
+  position: relative;
+  top: 0px;
+  width: 100%;
+  height: auto;
+  max-height: 700px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+/*This is where the newsletter section is */
+
+.newsButton,
+.newsletterContainer,
+.indexHeader {
+  font-family: "Playfair Display", serif;
+}
+.newsButton {
+  color: var(--paragraph-white);
+}
+::placeholder {
+  font-family: "Barlow", sans-serif;
+  color: #bfc9c8;
+}
+
+/* This is where the movie section begins */
+
+.indexHeader {
+  font-size: 24px;
+  margin-bottom: 10px;
+  padding-left: 45px;
+}
+.swiperContainer {
+  width: 100%;
+  height: auto;
+}
+#swiper1,
+#swiper2 {
+  width: calc(100%-112px);
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  margin-left: 56px;
+  margin-right: 56px;
+  margin-top: 24px;
+}
+
+.swiper-wrapper {
+  width: 100%;
+  height: 320px;
+  margin-left: 0px;
+  margin-right: 0px;
+  gap: 20px;
+}
+
+.swiper-slide {
+  width: auto;
+  height: auto;
+  justify-content: center;
+}
+.moviePoster {
+  width: auto;
+  height: 250px;
+}
+.indexHeader {
+  color: var(--paragraph-white);
+  margin-left: 24px;
+  margin-top: 40px;
+}
+
+/* this is where the news section begins */
+.newsButton,
+::placeholder {
+  font-size: 14px;
+}
+.newsletterContainer {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+.newsletter {
+  justify-content: center;
+  flex-direction: column;
+}
+.newsletterHeader {
+  font-size: 16px;
+  color: var(--paragraph-white);
+}
+.newsInput {
+  width: 40%;
+  height: 25px;
+  background-color: var(--paragraph-white);
+  border-style: none;
+}
+.newsButton {
+  width: auto;
+  border-style: solid;
+  border-color: var(--header-gold);
+  background-color: transparent;
+  height: 27px;
+  border-radius: 4px;
+}
+.thinLine {
+  width: 20%;
+  margin-bottom: 45px;
+  margin-top: 24px;
+}
+.indexBanner {
+  width: 100%;
+  margin-top: 45px;
+}
+
+/* The footer has icons eveny spaced out. The breakpoints can be changed later on. */
+.footer {
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  justify-content: space-around;
+  background-color: var(--background-darker);
+}
+@media only screen and (min-width: 600px) {
+  .mediaIcon {
+    width: 38px;
+    height: 38px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .moviePoster {
+    width: 200px;
+    height: 300px;
+  }
+  .newsletterHeader {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .mediaIcon {
+    width: 44px;
+    height: 44px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .moviePoster {
+    width: 250px;
+    height: 370px;
+  }
+  .newsletterHeader {
+    font-size: 30px;
+    margin-top: 100px;
+  }
+  .newsInput {
+    margin-bottom: 150px;
+    height: 45px;
+  }
+  ::placeholder {
+    font-size: 20px;
+  }
+  .newsButton {
+    height: 47px;
+    font-size: 20px;
+    width: 180px;
+  }
+  .indexHeader {
+    font-size: 35px;
+  }
+}
