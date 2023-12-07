@@ -1,5 +1,6 @@
 :root {
   --Background-lighter: #121e24;
+  --Background-Darker: #0c151a;
   --Goldenheader: #e8d39b;
   --Paragraph-Blue: #cbcfdc;
   --Paragraph: #fffef6;
@@ -757,367 +758,375 @@ footer img {
 
   footer img {
     margin-bottom: 14px;
+  }
+}
+@media (max-width: 450px) {
+  body {
+    margin: 0px;
+    box-sizing: border-box;
+  }
+
+  .wrapper {
+    background-color: var(--Background-lighter);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    height: auto;
+  }
+
+  .swiper-wrapper-movie {
+    display: none;
+    height: auto;
+    width: 360px;
+  }
+
+  svg.hamburger {
+    padding-top: 5px;
+  }
+
+  img.loggapng {
+    height: 37px;
+    width: 37px;
+  }
+
+  svg.search {
+    margin-right: 10px;
+    padding-bottom: 4px;
+  }
+
+  .navtext {
+    display: none;
+  }
+
+  .nav_section_one .hamburger {
+    display: block;
+  }
+
+  .nav-end-container .hamburger {
+    display: none;
+  }
+
+  img.loggapng {
+    display: block;
+  }
+
+  .hero {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+  }
+
+  .trailerimage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: radial-gradient(
+        57.58% 57.58% at 50% 42.42%,
+        rgba(18, 34, 41, 0.25) 0%,
+        #121e24 100%
+      ),
+      url("assets/images/heroimage.png");
+    width: 360px;
+    height: 427px;
+  }
+
+  .playbutton {
+    background-image: url("assets/images/playbutton.png");
+    width: 35px;
+    height: 33px;
+    position: absolute;
+    top: 90px;
+  }
+
+  .poster {
+    background-image: url("assets/images/MoviePoster.png");
+    width: 110px;
+    height: 178px;
+    position: absolute;
+    left: 25px;
+    top: 189px;
+  }
+
+  h2.movietitle {
+    position: absolute;
+    bottom: 22px;
+    color: var(--Goldenheader);
+    text-align: center;
+    margin-bottom: 0px;
+
+    /* Moble Title 1 */
+    font-family: Playfair Display;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  h2.movietitleDesktop {
+    display: none;
+  }
+
+  .sebiljetter {
+    display: flex;
+    width: 225px;
+    height: 39px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    background: linear-gradient(
+      90deg,
+      #e4bf5e -4.69%,
+      #e3bb55 22.57%,
+      #e3be5f 47.65%,
+      #e5c46f 76.55%,
+      #e5c87d 100%
+    );
+    box-shadow: 0px 4px 20px 0px rgba(255, 255, 255, 0.38);
+  }
+
+  p.mobileparagraph {
+    /* Layout of the p-tag*/
+    width: 317px;
+    height: 361px;
+
+    /* Typography */
+    color: var(--Paragraph-Blue);
+    font-family: Barlow;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.64px;
+    text-align: start;
+  }
+
+  .actorswrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: right;
+    gap: 30px;
+  }
+
+  .actorswrapper .decortopleft {
+    margin-right: 245px;
+    z-index: 0;
+  }
+
+  .swiperMovie {
+    width: 360px;
+    display: flex;
+  }
+
+  .swborder {
+    display: block;
+    align-items: start;
+    height: 5px;
+    background-color: var(--Goldenheader);
+    z-index: 100;
+    width: 360px;
+  }
+
+  .actorOneWrapper {
+    display: flex;
+    gap: 30px;
+  }
+
+  .actorTwoWrapper {
+    display: flex;
+    gap: 30px;
+  }
+
+  .actorThreeWrapper {
+    display: flex;
+    gap: 30px;
+  }
+
+  .actorFourWrapper {
+    display: flex;
+    gap: 30px;
+  }
+
+  .actorOne {
+    width: 95px;
+    height: 95px;
+    border-radius: 95px;
+    border: 4px solid var(--test, #e8d39b);
+    background: url(assets/images/bradpitt.png), lightgray 50% / cover no-repeat;
+  }
+
+  .actorTwo {
+    width: 95px;
+    height: 95px;
+    border-radius: 95px;
+    border: 4px solid var(--test, #e8d39b);
+    background: url(assets/images/bradpitt.png), lightgray 50% / cover no-repeat;
+  }
+
+  .actorThree {
+    width: 95px;
+    height: 95px;
+    border-radius: 95px;
+    border: 4px solid var(--test, #e8d39b);
+    background: url(assets/images/bradpitt.png), lightgray 50% / cover no-repeat;
+  }
+
+  .actorFour {
+    width: 95px;
+    height: 95px;
+    border-radius: 95px;
+    border: 4px solid var(--test, #e8d39b);
+    background: url(assets/images/bradpitt.png), lightgray 50% / cover no-repeat;
+  }
+
+  .actorpara {
+    color: var(--Paragraph-Blue, #cbcfdc);
+    text-align: center;
+
+    /* Mobile Paragraph Small */
+    font-family: Barlow;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.48px;
+  }
+
+  .bookingwrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    padding: 0 24px;
+  }
+
+  .dayButton {
+    display: flex;
+    width: 190px;
+    height: 40px;
+    padding: 4px 30px 4px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+    border-radius: 4px;
+    background: var(--Header, #f4d8a2);
+    box-shadow: 0px 4px 4px 0px rgba(255, 255, 255, 0.38);
+  }
+
+  .dayButton h2 {
+    color: var(--Background-lighter, #121e24);
+    text-align: center;
+    font-family: "Playfair Display";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+  }
+
+  .dayButton svg .dropdownbooking {
+    width: 25px;
+    height: 14.103px;
+    flex-shrink: 0;
+  }
+
+  .bookingwrapper .decortopleft {
+    margin-right: 245px;
+  }
+
+  .footerdecor {
+    background: url(assets/images/FooterDecor.png);
+  }
+
+  .movieSelWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 41px;
+    align-items: center;
+  }
+
+  .seating {
+    display: flex;
+    flex-direction: row;
+    gap: 34px;
+    align-items: center;
+  }
+
+  .seating .h2timePlace {
+    color: var(--Paragraph-Blue, #cbcfdc);
+    font-family: "Arya";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .smaller {
+    color: var(--Paragraph-Blue, #cbcfdc);
+    font-family: "Arya";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .chooseSeats {
+    display: flex;
+    width: 138px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 2px solid var(--Goldenheader);
+  }
+
+  .movieSelH2 {
+    color: var(--Paragraph, #fffef6);
+    text-align: center;
+
+    /* Mobile header */
+    font-family: "Playfair Display";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.6px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+  }
+
+  .footerdecor {
+    background-image: url("assets/images/FooterDecor.png");
+    width: 358px;
+    height: 27px;
+    flex-shrink: 0;
+  }
+
+  .footerGradientSwitch {
+    background: linear-gradient(180deg, #121e24 0%, #0c151a 100%);
+    width: 100%;
+    height: 28px;
+    flex-shrink: 0;
+  }
+
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 75px;
+    background: #0c151a;
+  }
+
+  footer img {
+    margin-bottom: 14px;
+  }
 }
 
-
-@media (max-width:450px) {
-    body {
-        margin: 0px;
-        box-sizing: border-box;
-    }
-
-    .wrapper {
-        background-color: var(--Background-lighter);
-        display: flex;
-        flex-flow: column nowrap;
-        align-items: center;
-        height: auto;
-    }
-
-    .swiper-wrapper-movie {
-        display: none;
-        height: auto;
-        width: 360px;
-    }
-
-    svg.hamburger {
-        padding-top: 5px;
-    }
-
-    img.loggapng {
-        height: 37px;
-        width: 37px;
-    }
-
-    svg.search {
-        margin-right: 10px;
-        padding-bottom: 4px;
-    }
-
-    .navtext {
-        display:none;
-    }
-    
-    .nav_section_one .hamburger {
-        display:block;
-    }
-
-    .nav-end-container .hamburger {
-        display: none;
-    }
-
-    img.loggapng {
-        display: block;
-    }
-
-    .hero {
-        display: flex;
-        flex-flow: column;
-        align-items: center;
-        position: relative;
-        width:100%;
-    }
-
-    .trailerimage {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-image: radial-gradient(57.58% 57.58% at 50% 42.42%, rgba(18, 34, 41, 0.25) 0%, #121E24 100%), 
-        url("assets/images/heroimage.png");
-        width: 360px;
-        height: 427px;
-    }
-
-    .playbutton {
-        background-image: url("assets/images/playbutton.png");
-        width: 35px;
-        height: 33px;
-        position: absolute;
-        top: 90px;
-    }
-
-    .poster {
-        background-image: url("assets/images/MoviePoster.png");
-        width: 110px;
-        height: 178px;
-        position: absolute;
-        left: 25px;
-        top:189px;
-    }
-
-    h2.movietitle {
-        position: absolute;
-        bottom: 22px;
-        color: var(--Goldenheader);
-        text-align: center;
-        margin-bottom: 0px;
-
-        /* Moble Title 1 */
-        font-family: Playfair Display;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-    }
-
-    h2.movietitleDesktop {
-        display: none;
-    }
-
-    .sebiljetter {
-        display: flex;
-        width: 225px;
-        height: 39px;
-        justify-content: center;
-        align-items: center;
-        border-radius: 2px;
-        background: linear-gradient(90deg, #E4BF5E -4.69%, #E3BB55 22.57%, #E3BE5F 47.65%, #E5C46F 76.55%, #E5C87D 100%);
-        box-shadow: 0px 4px 20px 0px rgba(255, 255, 255, 0.38);
-    }
-
-    p.mobileparagraph {
-        /* Layout of the p-tag*/
-        width: 317px;
-        height: 361px;
-
-        /* Typography */
-        color:var(--Paragraph-Blue);
-        font-family: Barlow;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        letter-spacing: 0.64px;
-        text-align: start;
-    }
-
-    .actorswrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: right;
-        gap: 30px;
-    }
-
-    .actorswrapper .decortopleft {
-        margin-right: 245px;
-        z-index: 0;
-    }
-
-    .swiperMovie{
-        width: 360px;
-        display: flex;
-    }
-
-    .swborder {
-        display: block;
-        align-items: start;
-        height: 5px;
-        background-color: var(--Goldenheader);
-        z-index: 100;
-        width: 360px;
-    }
-
-    .actorOneWrapper {
-        display: flex;
-        gap:30px
-    }
-
-    .actorTwoWrapper {
-        display: flex;
-        gap: 30px;
-    }
-
-    .actorThreeWrapper {
-        display: flex;
-        gap: 30px;
-    }
-
-    .actorFourWrapper {
-        display: flex;
-        gap: 30px;
-    }
-
-    .actorOne {
-        width:95px;
-        height: 95px;
-        border-radius: 95px;
-        border: 4px solid var(--test, #E8D39B);
-        background: url(assets/images/bradpitt.png), lightgray 50% / cover no-repeat;
-    }
-
-    .actorTwo {
-        width:95px;
-        height: 95px;
-        border-radius: 95px;
-        border: 4px solid var(--test, #E8D39B);
-        background: url(assets/images/bradpitt.png), lightgray 50% / cover no-repeat;
-    }
-
-    .actorThree {
-        width:95px;
-        height: 95px;
-        border-radius: 95px;
-        border: 4px solid var(--test, #E8D39B);
-        background: url(assets/images/bradpitt.png), lightgray 50% / cover no-repeat;
-    }
-
-    .actorFour {
-        width:95px;
-        height: 95px;
-        border-radius: 95px;
-        border: 4px solid var(--test, #E8D39B);
-        background: url(assets/images/bradpitt.png), lightgray 50% / cover no-repeat;
-    }
-
-    .actorpara {
-        color: var(--Paragraph-Blue, #CBCFDC);
-        text-align: center;
-
-        /* Mobile Paragraph Small */
-        font-family: Barlow;
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        letter-spacing: 0.48px;
-    }
-
-    .bookingwrapper {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-        align-items: center;
-        padding: 0 24px;
-    }
-
-    .dayButton {
-        display: flex;
-        width: 190px;
-        height: 40px;
-        padding: 4px 30px 4px 30px;
-        justify-content: center;
-        align-items: center;
-        gap: 45px;
-        border-radius: 4px;
-        background: var(--Header, #F4D8A2);
-        box-shadow: 0px 4px 4px 0px rgba(255, 255, 255, 0.38);
-    }
-
-    .dayButton h2 {
-        color: var(--Background-lighter, #121E24);
-        text-align: center;
-        font-family: 'Playfair Display';
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 40px;
-    }
-
-    .dayButton svg .dropdownbooking {
-        width: 25px;
-        height: 14.103px;
-        flex-shrink: 0;
-    }
-
-    .bookingwrapper .decortopleft {
-        margin-right: 245px;
-    }
-
-    .footerdecor {
-        background: url(assets/images/FooterDecor.png);
-    }
-
-    .movieSelWrapper {
-        display: flex;
-        flex-direction: column;
-        gap: 41px;
-        align-items: center;
-    }
-
-    .seating {
-        display: flex;
-        flex-direction: row;
-        gap: 34px;
-        align-items: center;
-    }
-
-    .seating .h2timePlace {
-        color: var(--Paragraph-Blue, #CBCFDC);
-        font-family: 'Arya';
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-    }
-
-    .smaller {
-        color: var(--Paragraph-Blue, #CBCFDC);
-        font-family: 'Arya';
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-    }
-
-    .chooseSeats {
-        display: flex;
-        width:138px;
-        height: 35px;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        flex-shrink: 0;
-        border-radius: 4px;
-        border: 2px solid var(--Goldenheader);
-    }
-
-    .movieSelH2 {
-        color: var(--Paragraph, #FFFEF6);
-        text-align: center;
-
-        /* Mobile header */
-        font-family: 'Playfair Display';
-        font-size: 15px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        letter-spacing: 0.6px;
-        margin-block-start: 0px;
-        margin-block-end: 0px;
-    }
-
-    .footerdecor{
-        background-image: url('assets/images/FooterDecor.png');
-        width: 358px;
-        height: 27px;
-        flex-shrink: 0;
-    }
-
-    .footerGradientSwitch {
-        background: linear-gradient(180deg, #121E24 0%, #0C151A 100%);
-        width: 100%;
-        height: 28px;
-        flex-shrink: 0;
-    }
-
-    footer {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        width: 100%;
-        height: 75px;
-        background: #0C151A;
-    }
-
-    footer img {
-        margin-bottom: 14px;
-    }
-}
-body {
-  background-color: var(--background-lighter);
-  margin: 0px;
-}
+/*FRIDA
 /* hero */
 .indexHero {
   position: relative;
@@ -1154,24 +1163,26 @@ body {
 /* This is where the movie section begins */
 
 .indexHeader {
-  font-size: 24px;
+  font-size: 20px;
   margin-bottom: 10px;
   padding-left: 45px;
 }
 .indexSwiperContainer {
   width: 100%;
+  overflow: hidden;
   height: auto;
 }
 #swiper1,
 #swiper2 {
   width: calc(100%-112px);
+  max-width: 100%;
   height: auto;
   justify-content: center;
   align-items: center;
   margin-left: 56px;
   margin-right: 56px;
   margin-top: 24px;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 .indexSwiperWrapper {
@@ -1179,8 +1190,6 @@ body {
   height: 320px;
   margin-left: 0px;
   margin-right: 0px;
-  gap: 20px;
-  margin-bottom: 80px;
 }
 .lineContainer {
   display: flex;
@@ -1230,7 +1239,7 @@ body {
   font-size: 30px;
 }
 .offerImg {
-  width: 270px;
+  width: 260px;
   height: auto;
   margin-left: 24px;
   margin-right: 24px;
@@ -1291,6 +1300,7 @@ body {
 }
 .lineContainer {
   justify-content: center;
+  display: flex;
 }
 .thinLine {
   width: 20%;
@@ -1308,9 +1318,12 @@ body {
   padding-top: 30px;
   padding-bottom: 30px;
   justify-content: space-around;
-  background-color: var(--background-darker);
+  background-color: var(--Background-Darker);
 }
 @media only screen and (min-width: 700px) {
+  .indexHeader {
+    font-size: 24px;
+  }
   .mediaIcon {
     width: 38px;
     height: 38px;
@@ -1369,12 +1382,12 @@ body {
     height: 370px;
   }
   .offerImg {
-    width: 600px;
-    margin-right: 80px;
+    width: 450px;
+    margin-left: 80px;
   }
 
   .offerHeader {
-    font-size: 70px;
+    font-size: 60px;
     margin-bottom: 20px;
   }
   .primaryButton {
@@ -1383,11 +1396,13 @@ body {
   }
   .offerParagraph,
   .primaryButton {
-    font-size: 24px;
+    font-size: 20px;
+    margin-right: 80px;
   }
   #offerEdgeUpper {
     margin-left: 24px;
     width: 200px;
+    padding-top: 80px;
   }
   #offerEdgeLower {
     margin-right: 24px;
