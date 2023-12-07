@@ -408,6 +408,12 @@ footer img {
         height: auto;
     }
 
+    .swiper-wrapper-movie {
+        display: none;
+        height: auto;
+        width: 360px;
+    }
+
     svg.hamburger {
         padding-top: 5px;
     }
@@ -532,17 +538,13 @@ footer img {
         z-index: 0;
     }
 
-    .swiper-wrapper {
-        display: flex;
-        height: auto;
-        width: 100%;
-    }
-
-    .swiper{
+    .swiperMovie{
         width: 360px;
+        display: flex;
     }
 
     .swborder {
+        display: block;
         align-items: start;
         height: 5px;
         background-color: var(--Goldenheader);
