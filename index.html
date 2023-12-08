@@ -23,14 +23,48 @@
     <title>Legacy Vision</title>
   </head>
   <body>
-    <div>
-      <img class="indexHero" src="Media/TestHeader.png" alt="">
-    </div>
-    <div class="navbar"></div>
+       <!-- This is where the Hero is displayed. -->
+    <div class="indexHeroImage">
+    <nav>
+      <div class="nav_section_one">
+          <div class="navtext">
+              <a href="index.html"><h3>HOME</h3></a>
+              <a href="index.html"><H3>MOVIES</H3></a>
+              <a href="index.html"><H3>ABOUT</H3></a>
+          </div>
+          <svg class="hamburger" xmlns="http://www.w3.org/2000/svg" width="33" height="27" viewBox="0 0 33 27" fill="none">
+              <path d="M2 2H31H2ZM2 13.5H31H2ZM2 25H31H2Z" fill="#FFFEF6"/>
+              <path d="M2 2H31M2 13.5H31M2 25H31" stroke="#FFFEF6" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"/>
+          </svg>
+          <img class="loggapng" src="assets/images/Logga.png" alt="">
+      </div>
+      <div class="nav-end-container">
+          <svg class='hamburger' xmlns="http://www.w3.org/2000/svg" width="34" height="30" viewBox="0 0 34 30" fill="none">
+              <path d="M2 2.5H32H2ZM2 15H32H2ZM2 27.5H32H2Z" fill="#FFFEF6"/>
+              <path d="M2 2.5H32M2 15H32M2 27.5H32" stroke="#FFFEF6" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"/>
+          </svg>
+          <svg class="search" xmlns="http://www.w3.org/2000/svg" width="32" height="31" viewBox="0 0 32 31" fill="none">
+              <path d="M22.2043 21.7969L28.1254 27.6094" stroke="#FFFEF6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14.8029 23.7344C19.9806 23.7344 24.178 19.614 24.178 14.5312C24.178 9.4485 19.9806 5.32812 14.8029 5.32812C9.62513 5.32812 5.42773 9.4485 5.42773 14.5312C5.42773 19.614 9.62513 23.7344 14.8029 23.7344Z" stroke="#FFFEF6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+      </div>
+  </nav>  
+  <div class="LV"></div>
+  <div class="indexHerotext">
+    <p class="indexHeroH1">Fight Club</p>
+    <p class="indexHeroP">Lorem ipsum dolor sit amet consectetur adipiscing elit porta urna lectus sapien arcu, magna a potenti quisque vestibulum venenatis tristique vestienen. </p>
+    <button onclick="window.location.href = 'movie.html'"  class="leftButton">Biljetter</button>
+    <button class="rightButton">Trailer</button>
+  </div>
+</div>
+<div class="newsletter"> 
 
-    <!-- This is where the Hero is displayed. -->
-
-    <header class="indexHero"></header>
+  <picture>
+    <source media="(max-width: 699px)" srcset="Media/bannerTopSmall.svg">
+    <source media="(min-width: 700px)" srcset="Media/BannerUpper.svg">
+    <img class="indexBanner" src="Media/BannerUpper.svg" alt="A nice banner">
+  </picture>
+</div>
 
     <!-- This is where current movies are displayed. With a sidescroll -->
     <p class="indexHeader">Nu på Bio</p>
@@ -116,7 +150,11 @@
   </div>
     <!-- this is here the offer is going to be displayed-->
 
-    <img id="offerEdgeUpper" src="Media/offerEdgeUpper.svg" alt="misc">
+    <picture>
+      <source media="(max-width: 699px)" srcset="Media/offeredgeUpperSmall.svg">
+      <source media="(min-width: 700px)" srcset="Media/offerEdgeUpper.svg">
+      <img id="offerEdgeUpper" src="Media/offerEdgeUpper.svg" alt="nice banner">
+    </picture>
     <div class="offerContainer">
       <img class="offerImg" src="Media/offerImage.png" alt="This is an image from the movie Joker">
       <div class="offerTextContent">
@@ -126,12 +164,15 @@
         Lorem ipsum dolor sit amet consectetur adipiscing elit, in velit dictumst habitant nulla fusce, pretium suspendisse lacinia vel posuere eget. Malesuada venenatis est metus taciti habitasse ligula vitae <br><br> 
         
         facilisi accumsan felis ante turpis ut. Sem aenean quis nec sollicitudin litora. Condimentum sociosqu facilisi odio quis  </p>
-        <button class="primaryButton"> Till Erbjudande</button>
+        <button class="offerButton" onclick="window.location.href = 'movie.html'" > Till Erbjudande</button>
       </div>
       </div>
-      <div id="containerOfferMisc">
-      <img id="offerEdgeLower" src="Media/offerEdgeLower.svg" alt="misc">
-    </div>
+        <picture
+        id="containerOfferMisc">
+          <source media="(max-width: 699px)" srcset="Media/offeredgeLowerSmall.svg">
+          <source media="(min-width: 700px)" srcset="Media/offerEdgeLower.svg">
+          <img id="offerEdgeLower" src="Media/offerEdgeLower.svg" alt="misc">
+        </picture>
          <!-- This is where upcoming movies are displayed. With a sidescroll -->
       <p class="indexHeader">Kommande Filmer</p>
       <div class=" indexSwiperContainer">
@@ -230,11 +271,16 @@
           />
           <button class="newsButton">Prenumerera</button>
         </form>
-        <img
+        <picture>
+          <source media="(max-width: 699px)" srcset="Media/bannerBottomSmall.svg">
+          <source media="(min-width: 700px)" srcset="Media/bannerBottom.svg">
+          <img
           class="indexBanner"
           src="Media/bannerBottom.svg"
           alt="A nice banner"
         />
+        </picture>
+
       </div>
     </div>
 

@@ -763,23 +763,85 @@ footer img {
 
 /*FRIDA
 /* hero */
-.indexHero {
-  position: relative;
-  top: 0px;
+
+button,
+a {
+  cursor: pointer;
+}
+.rightButton:hover,
+.newsButton:hover,
+.newsButton:hover {
+  background-color: var(--Goldenheader);
+  color: var(--Background-Darker);
+}
+.leftButton:hover {
+  background-color: transparent;
+  color: var(--Paragraph);
+  border-color: var(--Goldenheader);
+}
+
+.indexHeroImage {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(Media/indexHeroSmall.png);
   width: 100%;
-  height: auto;
+  height: 70vh;
   max-height: 700px;
   overflow: hidden;
   object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
-/*This is where the newsletter section is */
+.leftButton {
+  background-color: var(--Goldenheader);
+  color: var(--Background-Darker);
+  width: 90px;
+  height: 30px;
+  margin-top: 20px;
+  font-size: 18px;
+}
+.rightButton {
+  background-color: transparent;
+  border-color: var(--Goldenheader);
+  color: var(--Paragraph);
+  border-style: solid;
+  width: 90px;
+  height: 30px;
+  font-size: 18px;
+}
+.indexHerotext {
+  text-align: center;
+  position: absolute;
+  text-align: left;
+  max-width: 350px;
+  top: 30%;
+  left: 10%;
+  color: var(--Paragraph);
+  flex-wrap: wrap;
+}
+.indexHeroH1 {
+  font-size: 45px;
+  margin-bottom: 16px;
+}
+.indexHeroP {
+  font-size: 16px;
+  margin-top: 10px;
+  margin-right: 50px;
+}
+
+/*This is a general section */
 
 .newsButton,
 .newsletterContainer,
 .indexHeader,
 .offerHeader,
-.primaryButton {
+.newsButton,
+.indexHeroH1,
+.rightButton,
+.leftButton,
+.offerButton {
   font-family: "Playfair Display", serif;
 }
 .newsButton {
@@ -787,7 +849,8 @@ footer img {
 }
 .newsInput,
 .offerParagraph,
-::placeholder {
+::placeholder,
+.indexHeroP {
   font-family: "Barlow", sans-serif;
 }
 .offerParagraph,
@@ -796,11 +859,10 @@ footer img {
 }
 
 /* This is where the movie section begins */
-
 .indexHeader {
   font-size: 20px;
   margin-bottom: 10px;
-  padding-left: 45px;
+  padding-left: 35px;
 }
 .indexSwiperContainer {
   width: 100%;
@@ -855,14 +917,14 @@ footer img {
   flex-direction: column;
 }
 .offerHeader,
-.primaryButton {
+.newsButton {
   color: var(--Paragraph);
 }
 .offerParagraph {
   color: var(--Paragraph-Blue);
 }
 .offerParagraph,
-.primaryButton {
+.newsButton {
   font-size: 16px;
   margin: 32px;
 }
@@ -879,11 +941,13 @@ footer img {
   margin-left: 24px;
   margin-right: 24px;
 }
-.primaryButton {
+.offerButton {
   background-color: transparent;
   border-color: var(--Goldenheader);
+  color: var(--Paragraph);
   width: 135px;
   height: 32px;
+  margin-left: 0px;
 }
 #offerEdgeUpper {
   margin-left: 24px;
@@ -956,8 +1020,52 @@ footer img {
   background-color: var(--Background-Darker);
 }
 @media only screen and (min-width: 700px) {
+  img.loggapng {
+    display: block;
+    width: 37px;
+    height: 37px;
+  }
+  .indexHeroImage {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url(Media/indexHero.png);
+    width: 100%;
+    height: 90vh;
+  }
+  .leftButton {
+    background-color: var(--Goldenheader);
+    color: var(--Background-Darker);
+    width: 180px;
+    height: 60px;
+    margin-top: 20px;
+    font-size: 28px;
+  }
+  .rightButton {
+    background-color: transparent;
+    border-color: var(--Goldenheader);
+    color: var(--Paragraph);
+    border-style: solid;
+    width: 180px;
+    height: 60px;
+    font-size: 28px;
+    margin-left: 45px;
+  }
+  .indexHerotext {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    max-width: 650px;
+    flex-wrap: wrap;
+  }
+  .indexHeroH1 {
+    font-size: 60px;
+  }
+  .indexHeroP {
+    font-size: 20px;
+    max-width: 700px;
+    margin-left: 0px;
+  }
   .indexHeader {
-    font-size: 24px;
+    font-size: 30px;
   }
   .mediaIcon {
     width: 38px;
@@ -988,12 +1096,13 @@ footer img {
     text-align: center;
     margin-right: 50px;
   }
-  .primaryButton {
-    width: 200px;
-    height: 45px;
+  .newsButton {
+    width: 250px;
+    height: 50px;
+    font-size: 24px;
+    margin-left: 0px;
   }
-  .offerParagraph,
-  .primaryButton {
+  .offerParagraph {
     font-size: 16px;
   }
   .offerHeader {
@@ -1001,10 +1110,30 @@ footer img {
     margin-bottom: 16px;
   }
   .newsletterHeader {
+    font-size: 30px;
+    margin-top: 100px;
+  }
+  .newsInput {
+    margin-bottom: 150px;
+    height: 45px;
     font-size: 24px;
   }
 }
-@media only screen and (min-width: 1180px) {
+@media only screen and (min-width: 1200px) {
+  img.loggapng {
+    display: none;
+    width: 37px;
+    height: 37px;
+  }
+  .LV {
+    position: absolute;
+    top: 0;
+    left: 30%;
+    background-image: url(Media/logoWithUndertitle.svg);
+    background-repeat: no-repeat;
+    height: 20vh;
+    width: 100%;
+  }
   .mediaIcon {
     width: 44px;
     height: 44px;
@@ -1025,12 +1154,9 @@ footer img {
     font-size: 60px;
     margin-bottom: 20px;
   }
-  .primaryButton {
-    width: 250px;
-    height: 50px;
-  }
+
   .offerParagraph,
-  .primaryButton {
+  .newsButton {
     font-size: 20px;
     margin-right: 80px;
   }
@@ -1054,13 +1180,5 @@ footer img {
   }
   ::placeholder {
     font-size: 20px;
-  }
-  .newsButton {
-    height: 47px;
-    font-size: 24px;
-    width: 180px;
-  }
-  .indexHeader {
-    font-size: 35px;
   }
 }
