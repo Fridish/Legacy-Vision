@@ -37,7 +37,7 @@ const indexSwiper = new Swiper(".indexSwiper", {
       slidesPerView: 1.5,
       spaceBetween: 10,
     },
-    500: {
+    520: {
       slidesPerView: 2.5,
       spaceBetween: 15,
     },
