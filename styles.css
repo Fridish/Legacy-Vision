@@ -5,7 +5,6 @@
  --Paragraph: #FFFEF6;
 }
 
-
 body {
     margin: 0px;
     box-sizing: border-box;
@@ -37,6 +36,310 @@ nav {
 
 .none {
     display:none
+}
+
+.descwrapperDesktop {
+    display: flex;
+    width: 100%;
+    height: auto;
+    gap: 66px;
+}
+
+.ticketsWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 31%;
+    padding-left: 5.5%;
+    gap: 32px;
+}
+
+.desktopPoster {
+    background-image: url("assets/images/fightclubPoster.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 621px;
+}
+
+.sebiljetterDesktop{
+    display: inline-flex;
+    padding: 13px 93px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, #E4BF5E -4.69%, #E3BB55 22.57%, #E3BE5F 47.65%, #E5C46F 76.55%, #E5C87D 100%);
+    box-shadow: 0px 4px 4px 0px rgba(255, 255, 255, 0.38);
+}
+
+.sebiljetterDesktop p {
+    color: var(--Background-lighter, #121E24);
+    text-align: center;
+    font-family: Playfair Display;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+.chooseseatsDesktop{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.p-decor-top-leftcsd{
+    background-image: url(assets/images/decor2new.png);
+    width: 172px;
+    height: 85px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.moviedescD{
+    position: relative;
+}
+
+.moivedescdecortopleft {
+    background-image: url(assets/images/decor2new.png);
+    width: 172px;
+    height: 85px;
+    position: absolute;
+    top:0px;
+    left: -28px;
+}
+
+.moviedesctext p {
+    width: 100%;
+    height: 417px;
+    color: var(--Paragraph-Blue, #CBCFDC);
+
+    /* Paragraph 1 */
+    font-family: Barlow;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.96px;
+}
+
+.moviedescbottomright {
+    background-image: url(assets/images/decor2new.png);
+    width: 172px;
+    height: 85px;
+    transform: rotate(180deg);
+    position: absolute;
+    bottom: 35px;
+    right: 0px;
+}
+
+.pictureboxwrapperdesktop {
+    display: flex;
+    position: relative;
+    height: 350px;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.pictureboxDesktop{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 295px;
+    top: 30px;
+    left: 0px;
+}
+
+.pictureonedesktop{
+    background: url(assets/images/fightclubonenew.png), lightgray 50% / contain no-repeat;
+    width: 248px;
+    height: 295px;
+}
+
+.picturetwodesktop{
+    background: url(assets/images/fightclubtwonew.png), lightgray 50% / contain no-repeat;
+    width: 300px;
+    height: 295px;
+    object-fit: contain;
+}
+
+.picturefourdesktop{
+    width: 202px;
+    height: 295px;
+    background: url(assets/images/fightclubfournew.png), lightgray 50% / contain no-repeat;
+    object-fit: cover;
+}
+
+.pictureboxdecorbottom{
+    width: 241px;
+    height: 2px;
+    border-radius: 50px;
+    background: var(--Header, #F4D8A2);
+}
+
+.actorsboxdesktop{
+    display: flex;
+    height: 281px;
+    gap: 38px;
+    margin-top: 81px;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.actorsboxdesktop .moviedescbottomright {
+    bottom: -21px;
+    right: 0px;
+}
+
+.actoronedesktop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.actoronedesktop p {
+    color: var(--Paragraph-Blue, #CBCFDC);
+    text-align: center;
+    font-family:'Poiret One';
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.actoronedesktopimg{
+    background-image: url(assets/images/Ellipse\ 10.png);
+    width: 154px;
+    height: 154px;  
+}
+
+.actortwodesktopimg{
+    background-image: url(assets/images/Ellipse\ 9.png);
+    width: 154px;
+    height: 154px;  
+}
+
+.actorthreedesktopimg{
+    background-image: url(assets/images/Ellipse\ 8.png);
+    width: 154px;
+    height: 154px;  
+}
+
+.actorfourdesktopimg{
+    background-image: url(assets/images/Ellipse\ 7.png);
+    width: 154px;
+    height: 154px;  
+}
+
+.decor-top-right-90deg {
+    background-image: url(assets/images/decor2new.png);
+    width: 172px;
+    height: 85px;
+    transform: rotate(90deg);
+    position: absolute;
+    top:41px;
+    right: -50px;
+}
+
+.dayButtonDesktop {
+    display: inline-flex;
+    padding: 4px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    border-radius: 4px;
+    background: var(--Header, #F4D8A2);
+    box-shadow: 0px 4px 4px 0px rgba(255, 255, 255, 0.38);
+    margin-top: 45px;
+}
+
+.dayButtonDesktop h2 {
+    color: var(--Background-lighter, #121E24);
+    text-align: center;
+    font-family: Playfair Display;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px; /* 133.333% */
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+.dayButtonDesktop svg {
+    width: 39px;
+    height: 22px;
+}
+
+.movieSelWrapperD {
+    display: flex;
+    flex-direction: column;
+    gap: 41px;
+    align-items: center;
+}
+
+.seatingD {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+}
+
+.seatingD .h2timePlaceD {
+    color: var(--Paragraph-Blue, #CBCFDC);
+    font-family: 'Arya';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.smallerD {
+    color: var(--Paragraph-Blue, #CBCFDC);
+    font-family: 'Arya';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.chooseSeatsD {
+    display: flex;
+    padding: 11px 34px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 2px solid var(--Goldenheader);
+}
+
+.movieSelH2D {
+    color: var(--Paragraph, #FFFEF6);
+    text-align: center;
+    font-family: Playfair Display;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+}
+
+.dpaWrapper{
+    display: flex;
+    flex-direction: column;
+    width: 54%;
 }
 
 .nav_section_one {
@@ -98,7 +401,7 @@ img.loggapng {
     flex-direction: column;
     align-items: center;
     background-image: radial-gradient(57.58% 57.58% at 50% 42.42%, rgba(18, 34, 41, 0.25) 0%, #121E24 100%), 
-    url("assets/images/heroimagedesktop.png");
+    url("assets/images/fightclubhero.png");
     background-position: center;
     width: 100%;
     height: 515px;
@@ -119,6 +422,19 @@ img.loggapng {
     position: absolute;
     top: 484px;
     left: 89px;
+    display: none;
+}
+
+.p-decor-top-left {
+    background-image: url(assets/images/decor2new.png);
+    width: 172px;
+    height: 85px;
+}
+
+.p-decor-bottom-right {
+    background-image: url(assets/images/decor2new.png);
+    width: 172px;
+    height: 85px;
 }
 
 h2.movietitle {
@@ -140,9 +456,7 @@ h2.movietitleDesktop {
 }
 
 .paragraphWindow {
-    position: relative;
-    text-align: center;
-    color: white;
+    display: none;
 }
 
 .sebiljetter {
@@ -151,8 +465,8 @@ h2.movietitleDesktop {
 
 p.mobileparagraph {
     /* Layout of the p-tag*/
-    width: 317px;
-    height: 361px;
+    width: 720px;
+    height: 417px;      
 
     /* Typography */
     color:var(--Paragraph-Blue);
@@ -163,10 +477,11 @@ p.mobileparagraph {
     line-height: normal;
     letter-spacing: 0.64px;
     text-align: start;
+    margin-left: 250px;
 }
 
 .actorswrapper {
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     text-align: right;
@@ -186,7 +501,7 @@ p.mobileparagraph {
 
 .swiperMovie{
     width: 100%;
-    display: none;
+    display: none !important;
 }
 
 .swborder {
@@ -263,24 +578,11 @@ p.mobileparagraph {
 }
 
 .bookingwrapper {
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 30px;
     align-items: center;
     padding: 0 24px;
-}
-
-.dayButton {
-    display: flex;
-    width: 190px;
-    height: 40px;
-    padding: 4px 30px 4px 30px;
-    justify-content: center;
-    align-items: center;
-    gap: 45px;
-    border-radius: 4px;
-    background: var(--Header, #F4D8A2);
-    box-shadow: 0px 4px 4px 0px rgba(255, 255, 255, 0.38);
 }
 
 .dayButton h2 {
@@ -301,10 +603,6 @@ p.mobileparagraph {
 
 .bookingwrapper .decortopleft {
     margin-right: 245px;
-}
-
-.footerdecor {
-    background: url(assets/images/FooterDecor.png);
 }
 
 .movieSelWrapper {
@@ -371,6 +669,36 @@ p.mobileparagraph {
     width: 358px;
     height: 27px;
     flex-shrink: 0;
+    display: none;
+}
+
+.footerdecorDesktop{
+    display: flex;
+    height: 27px;
+    width: 100%;
+    justify-content:center;
+    align-items: center;
+    gap: 20px;
+}
+
+.left{
+    width: 41%;
+    height: 2px;
+    border-radius: 50px;
+    background: var(--Header, #F4D8A2);
+}
+
+.flowerdesktop{
+    width: 65px;
+    height: 27px;
+    margin-top: -24px;
+}
+
+.right{
+    width: 41%;
+    height:2px;
+    border-radius: 50px;
+    background: var(--Header, #F4D8A2);
 }
 
 .footerGradientSwitch {
@@ -393,8 +721,165 @@ footer img {
     margin-bottom: 14px;
 }
 
+@media (max-width:1400px) {
+    .moviedesctext p {
+        font-size: 21px;
+    }
+}
 
-@media (max-width:450px) {
+@media (max-width:990px) {
+
+    .sebiljetterDesktop{
+        padding: 13px 10px;
+    }
+
+    .dpaWrapper{
+       padding-right: 40px;
+    }
+
+    .actorsboxdesktop .moviedescbottomright {
+        bottom: -311px;
+    }
+
+    .p-decor-top-leftcsd{
+        left:-17px;
+    }
+
+    .decor-top-right-90deg{
+        right: -70px;
+    }
+
+    .sebiljetterDesktop p {
+        font-size: 21px;
+        font-weight: 700;
+    }
+
+    .moviedesctext p{
+        font-size: 21px;
+    }
+
+    .moviedescbottomright{
+        right: -15px;
+    }
+
+
+}
+
+@media (max-width:950px) {
+    .moviedesctext p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:850px) {
+    .pictureonedesktop{
+        width:50%;
+    }
+
+    .picturetwodesktop{
+        width: 0%;
+    }
+
+    .picturefourdesktop{
+        width:50%;
+    }
+
+    .seatingD .h2timePlaceD{
+        font-size: 20px;
+    }
+
+    .smallerD{
+        font-size: 25px;
+    }
+
+    .movieSelH2D{
+        font-size: 16px;
+    }
+
+    .chooseSeatsD{
+        padding: 11px 28px;
+    }
+
+    .dayButtonDesktop h2{
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    .dayButtonDesktop{
+        padding: 4px 8px;
+    }
+
+    .actorsboxdesktop{
+        height: 650px;
+    }
+
+    .actorsboxdesktop .moviedescbottomright {
+        bottom: 27px;
+    }
+
+    .moviedescbottomright{
+        right:-9px;
+        bottom:0px;
+    }
+
+    .actoronedesktopimg{
+        height: 100px;
+        width: 100px;
+        background-size: contain;
+    }
+
+    .actorfourdesktopimg{
+        height: 100px;
+        width: 100px;
+        background-size: contain;
+    }
+
+    .decor-top-right-90deg {
+        right: -90px;
+    }
+
+    .actortwodesktopimg{
+        height: 100px;
+        width: 100px;
+        background-size: contain;
+    }
+
+    .actorthreedesktopimg{
+        height: 100px;
+        width: 100px;
+        background-size: contain;
+    }
+
+@media (max-width:750px) {
+    .dayButtonDesktop {
+        padding: 4px 8px;
+    }
+    .actoronedesktop p {
+        font-size: 18px;
+    }
+
+    .moviedesctext p{
+        font-size: 16px;
+    }
+
+    .moviedescbottomright{
+        bottom:10px;
+    }
+
+    .dayButtonDesktop h2{
+        font-size: 18px;
+    }
+
+
+}
+
+@media (max-width:619px) {
+    .moviedescbottomright{
+        display: none;
+    }
+}
+
+@media (max-width:600px) {
     body {
         margin: 0px;
         box-sizing: border-box;
@@ -444,6 +929,37 @@ footer img {
         display: block;
     }
 
+    .descwrapperDesktop{
+        display:none;
+    }
+
+    .paragraphWindow {
+        position: relative;
+        text-align: center;
+        color: white;
+        width: auto;
+        height: auto;
+        top: 0px;
+        display: block;
+        padding: 15px 0 15px 0;
+    }
+
+    .footerdecor{
+        display: block;
+    }
+
+    .footerdecorDesktop{
+        display: none;
+    }
+
+    .p-decor-top-left {
+        display: none;
+    }
+    
+    .p-decor-bottom-right {
+        display: none;
+    }
+
     .hero {
         display: flex;
         flex-flow: column;
@@ -458,7 +974,7 @@ footer img {
         align-items: center;
         background-image: radial-gradient(57.58% 57.58% at 50% 42.42%, rgba(18, 34, 41, 0.25) 0%, #121E24 100%), 
         url("assets/images/heroimage.png");
-        width: 360px;
+        width: 100%;
         height: 427px;
     }
 
@@ -477,6 +993,7 @@ footer img {
         position: absolute;
         left: 25px;
         top:189px;
+        display: block;
     }
 
     h2.movietitle {
@@ -523,6 +1040,7 @@ footer img {
         line-height: normal;
         letter-spacing: 0.64px;
         text-align: start;
+        margin-left: 0px;
     }
 
     .actorswrapper {
@@ -531,16 +1049,22 @@ footer img {
         align-items: center;
         text-align: right;
         gap: 30px;
+        position: relative;
+        padding-top: 70px;
     }
 
     .actorswrapper .decortopleft {
-        margin-right: 245px;
-        z-index: 0;
+        background-image: url(assets/images/decor2\ \(2\).png);
+        width: 90px;
+        height: 45px;
+        position: absolute;
+        top:31px;
+        left:-24px;
     }
 
     .swiperMovie{
         width: 360px;
-        display: flex;
+        display: flex !important;
     }
 
     .swborder {
@@ -577,7 +1101,7 @@ footer img {
         height: 95px;
         border-radius: 95px;
         border: 4px solid var(--test, #E8D39B);
-        background: url(assets/images/bradpitt.png), lightgray 50% / cover no-repeat;
+        background: url(assets/images/Ellipse\ 10.png), lightgray 50% / cover no-repeat;
     }
 
     .actorTwo {
@@ -585,7 +1109,11 @@ footer img {
         height: 95px;
         border-radius: 95px;
         border: 4px solid var(--test, #E8D39B);
-        background: url(assets/images/bradpitt.png), lightgray 50% / cover no-repeat;
+        background: url(assets/images/Ellipse\ 9.png), lightgray 50% / cover no-repeat;
+    }
+
+    .daybutton svg:hover {
+        color:var(--Goldenheader);
     }
 
     .actorThree {
@@ -593,7 +1121,7 @@ footer img {
         height: 95px;
         border-radius: 95px;
         border: 4px solid var(--test, #E8D39B);
-        background: url(assets/images/bradpitt.png), lightgray 50% / cover no-repeat;
+        background: url(assets/images/Ellipse\ 8.png), lightgray 50% / cover no-repeat;
     }
 
     .actorFour {
@@ -601,7 +1129,7 @@ footer img {
         height: 95px;
         border-radius: 95px;
         border: 4px solid var(--test, #E8D39B);
-        background: url(assets/images/bradpitt.png), lightgray 50% / cover no-repeat;
+        background: url(assets/images/Ellipse\ 7.png), lightgray 50% / cover no-repeat;
     }
 
     .actorpara {
@@ -656,10 +1184,6 @@ footer img {
 
     .bookingwrapper .decortopleft {
         margin-right: 245px;
-    }
-
-    .footerdecor {
-        background: url(assets/images/FooterDecor.png);
     }
 
     .movieSelWrapper {
