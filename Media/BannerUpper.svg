@@ -1,0 +1,12 @@
+<svg width="1440" height="122" viewBox="0 0 1440 122" fill="none" xmlns="http://www.w3.org/2000/svg">
+<ellipse cx="8.22828" cy="2.87452" rx="8.22828" ry="2.87452" transform="matrix(-0.716968 0.697106 -0.810264 -0.586065 715.878 7.52805)" fill="#F4D8A2"/>
+<ellipse cx="695.235" cy="7.73808" rx="7.73808" ry="3.58839" transform="rotate(90 695.235 7.73808)" fill="#F4D8A2"/>
+<ellipse cx="8.22833" cy="2.8745" rx="8.22833" ry="2.8745" transform="matrix(0.716995 0.697078 -0.810243 0.586094 679.397 4.15897)" fill="#F4D8A2"/>
+<ellipse cx="12.0334" cy="2.67694" rx="12.0334" ry="2.67694" transform="matrix(0.999996 0.00292382 -0.00581624 0.999983 662.781 21.5758)" fill="#F4D8A2"/>
+<ellipse cx="12.0334" cy="2.67694" rx="12.0334" ry="2.67694" transform="matrix(0.999996 0.00292382 -0.00581624 0.999983 703.683 21.5758)" fill="#F4D8A2"/>
+<ellipse cx="695.19" cy="24.25" rx="2.75" ry="3.52605" transform="rotate(-90 695.19 24.25)" fill="#D9D9D9"/>
+<path d="M442 36H683.5" stroke="#F4D8A2" stroke-width="2"/>
+<path d="M707 36H948.5" stroke="#F4D8A2" stroke-width="2"/>
+<path d="M29 119.5L29 39L115 39" stroke="#F4D8A2" stroke-width="3"/>
+<path d="M1323 36L1403.5 36V122" stroke="#F4D8A2" stroke-width="3"/>
+</svg>
