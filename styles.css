@@ -74,6 +74,14 @@ nav {
     box-shadow: 0px 4px 4px 0px rgba(255, 255, 255, 0.38);
 }
 
+.sebiljetterDesktop:hover {
+    background: var(--Background-Darker);
+}
+
+.sebiljetterDesktop:hover > p{
+    color:var(--Goldenheader);
+}
+
 .sebiljetterDesktop p {
     color: var(--Background-lighter, #121E24);
     text-align: center;
@@ -265,6 +273,18 @@ nav {
     margin-top: 45px;
 }
 
+.dayButtonDesktop:hover {
+    background: var(--Background-Darker);
+}
+
+.dayButtonDesktop:hover > h2{
+    color: var(--Goldenheader);
+}
+
+.dayButtonDesktop:hover > svg{
+    color: var(--Goldenheader);
+}
+
 .dayButtonDesktop h2 {
     color: var(--Background-lighter, #121E24);
     text-align: center;
@@ -325,6 +345,15 @@ nav {
     border: 2px solid var(--Goldenheader);
 }
 
+.chooseSeatsD:hover {
+    background: var(--Goldenheader);
+}
+
+.chooseSeatsD:hover > h2{
+    color: var(--Background-lighter);
+    font-size: 24px;
+}
+
 .movieSelH2D {
     color: var(--Paragraph, #FFFEF6);
     text-align: center;
@@ -372,6 +401,10 @@ nav {
   margin-block-start: 0px;
 }
 
+.navtext h3:hover{
+    color:var(--Goldenheader);
+}
+
 .nav_section_one .hamburger {
   display: none;
   padding-top: 5px;
@@ -416,6 +449,11 @@ img.loggapng {
   top: 168px;
 }
 
+.playbutton:hover{
+    background-image: url("assets/images/playbuttondarker.png");
+    cursor: pointer;
+}
+
 .poster {
     background-image: url("assets/images/fightclubPoster.png");
     width: 441px;
@@ -436,6 +474,7 @@ img.loggapng {
     background-image: url(assets/images/decor2new.png);
     width: 172px;
     height: 85px;
+}
 
 h2.movietitle {
   display: none;
@@ -457,6 +496,7 @@ h2.movietitleDesktop {
 
 .paragraphWindow {
     display: none;
+}
 
 .sebiljetter {
   display: none;
@@ -652,6 +692,11 @@ p.mobileparagraph {
   line-height: normal;
 }
 
+.swiperMovie{
+    width: 100%;
+    display: none !important;
+    }
+
 .chooseSeats {
   display: flex;
   width: 138px;
@@ -663,6 +708,14 @@ p.mobileparagraph {
   border-radius: 4px;
   border: 2px solid var(--Goldenheader);
 }
+
+.bookingwrapper {
+    display: none;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    padding: 0 24px;
+    }
 
 .movieSelH2 {
   color: var(--Paragraph, #fffef6);
@@ -701,6 +754,14 @@ footer {
   height: 75px;
   background: #0c151a;
 }
+
+.actorswrapper {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: right;
+    gap: 30px;
+  }
 
 footer img {
   margin-bottom: 14px;
@@ -841,16 +902,7 @@ footer img {
     letter-spacing: 0.64px;
     text-align: start;
     margin-left: 250px;
-}
-
-.actorswrapper {
-    display: none;
-  }
-    flex-direction: column;
-    align-items: center;
-    text-align: right;
-    gap: 30px;
-  }
+    }
 
   .actorswrapper .decortopleft {
     margin-right: 245px;
@@ -861,11 +913,6 @@ footer img {
     display: flex;
     height: auto;
     width: 100%;
-    }
-
-    .swiperMovie{
-    width: 100%;
-    display: none !important;
     }
 
   .swiper {
@@ -944,14 +991,6 @@ footer img {
     line-height: normal;
     letter-spacing: 0.48px;
   }
-
-    .bookingwrapper {
-    display: none;
-    flex-direction: column;
-    gap: 30px;
-    align-items: center;
-    padding: 0 24px;
-    }
 
 
 .dayButton h2 {
@@ -1033,7 +1072,9 @@ footer img {
     margin-block-end: 0px;
   }
 
-  .footerdecor {
+}
+
+.footerdecor {
     background-image: url("assets/images/FooterDecor.png");
     width: 358px;
     height: 27px;
@@ -1070,30 +1111,35 @@ footer img {
     background: var(--Header, #F4D8A2);
 }
 
-  .footerGradientSwitch {
+.footerGradientSwitch {
     background: linear-gradient(180deg, #121e24 0%, #0c151a 100%);
     width: 100%;
     height: 28px;
     flex-shrink: 0;
-  }
+}
 
-  footer {
+footer {
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: 100%;
     height: 75px;
     background: #0c151a;
-  }
+}
 
-  footer img {
+footer img {
     margin-bottom: 14px;
-  }
 }
 
 @media (max-width:1400px) {
     .moviedesctext p {
         font-size: 21px;
+    }
+}
+
+@media (max-width:1250) {
+    .moviedesctext p {
+        font-size: 18px;
     }
 }
 
@@ -1131,8 +1177,6 @@ footer img {
     .moviedescbottomright{
         right: -15px;
     }
-
-
 }
 
 @media (max-width:950px) {
@@ -1142,6 +1186,12 @@ footer img {
 }
 
 @media (max-width:850px) {
+
+    #videoFrame {
+        width: 400px;
+        height: 225px;
+      }
+
     .pictureonedesktop{
         width:50%;
     }
@@ -1219,6 +1269,7 @@ footer img {
         width: 100px;
         background-size: contain;
     }
+}
 
 @media (max-width:750px) {
     .dayButtonDesktop {
@@ -1239,8 +1290,6 @@ footer img {
     .dayButtonDesktop h2{
         font-size: 18px;
     }
-
-
 }
 
 @media (max-width:619px) {
@@ -1262,6 +1311,11 @@ footer img {
         align-items: center;
         height: auto;
     }
+
+    #videoFrame {
+        width: 300px; /* Set your desired width */
+        height: 169px; /* Set your desired height */
+      }
 
     .swiper-wrapper-movie {
         display: none;
@@ -1641,6 +1695,7 @@ footer img {
     footer img {
         margin-bottom: 14px;
     }
+}
 /*FRIDA
 /* hero */
 
