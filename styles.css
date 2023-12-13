@@ -1084,6 +1084,12 @@ a {
     width: 350px;
     margin-left: 50px;
   }
+  .offerButton {
+    width: 200px;
+    height: 50px;
+    font-size: 24px;
+    margin-left: 0px;
+  }
   .offerContainer {
     display: flex;
     flex-direction: row;
@@ -1120,6 +1126,13 @@ a {
   }
 }
 @media only screen and (min-width: 1200px) {
+  .indexHerotext {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    max-width: 650px;
+    flex-wrap: wrap;
+  }
   img.loggapng {
     display: none;
     width: 37px;
